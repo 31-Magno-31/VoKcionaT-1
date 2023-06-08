@@ -1,0 +1,159 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+ul{list-style: none;}
+h1{font-size: 3.5rem;}
+h2{font-size: 3rem;}
+h3{font-size: 2.5rem;}
+p{font-size: 1.5rem;}
+ul{list-style: none;}
+li{font-size: 1.2rem;}
+
+button{
+    font-size: 2rem;
+    font-weight: 1.5rem;
+    padding: 5px;
+    border-radius: 10px;
+    border:  2px solid black;
+    color: white;
+    background-color: #82E0AA ;
+}
+
+button:hover{
+    background-color: #ABEBC6;
+}
+
+.container-Presentacion{
+    max-width: 1400px;
+    margin: auto;
+}
+
+header{
+    background-color:black;
+
+}
+header.container-Presentacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .logo{
+    margin: 0;
+    padding: 20px,25px;
+    font-size: 2rem;
+    color: red;
+    text-align: center; 
+    background-image: url("logo\ vok\ c.png");
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position: center;
+
+}
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 20px;
+
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    color: #82E0AA;
+}
+
+header a :hover{
+    color:#ABEBC6
+}
+
+#presentacion{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 80vh;
+    flex-direction: column;
+    color: white;
+    background-image: url("vocacion.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+#sobre-la-pagina{
+    background-color: aqua;
+    color: white;
+    text-align: center;
+
+}
+#sobre-la-pagina .container-Presentacion{
+    text-align: center;
+    padding: 100px 10px;
+}
+
+#sobre-la-pagina p{
+    display: none;
+}
+#sobre-la-pagina .informarse{
+    padding: 50px;
+    background-position: center center;
+    background-size: cover;
+    margin: 20px;
+    border-radius: 20px;
+}
+#sobre-la-pagina a{
+    text-decoration: none;
+    color:white;
+}
+
+.informarse:nth-child(1){
+background-image: linear-gradient(0deg, rgba(0,0,0,0.5),
+rgba(0,0,0,0.5)
+) ,url("cer.png");
+
+
+}
+.informarse:nth-child(2){
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+    ) , url("si.avif");
+
+}
+
+.informarse:nth-child(3){
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+    ) ,url("ideas.webp");
+}
+@media(min-width: 720px){ 
+    header .container-Presentacion{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+    #sobre-la-pagina .img{
+        display : flex;
+    }
+
+    #sobre-la-pagina p{
+        display: block;
+        margin-bottom: 30px;
+
+    }
+
+    #sobre-la-pagina .informarse{
+        padding: 15px;
+    }
+}

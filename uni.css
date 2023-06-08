@@ -1,0 +1,15 @@
+
+
+body{
+    height: 100vh;
+    display: flex;
+    background-image: url("universidadesescoger.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.ayuda{
+    color: black;
+    text-align: center;
+}

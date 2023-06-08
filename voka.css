@@ -1,0 +1,13 @@
+body{
+    height: 100vh;
+    display: flex;
+    background-image: url("construcion.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.cons{
+    color: black;
+    text-align: center;
+}

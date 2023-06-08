@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(imagen.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+.container-for{
+    width: 90%;
+    height: 90vh;
+    display: flex;
+    justify-content: space-around;
+    transition: all .5s ease-out;
+}
+
+.bien{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.mensaje{
+    padding: 1rem;
+
+}
+
+.mensaje h2{
+    font-size: 1.7rem;
+    padding: 1rem 0;
+}
+
+.mensaje button {
+    padding: 1rem;
+    font-weight: 400;
+    background-color: #82E0AA;
+    border-radius: 2rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+    transition: all .3s ease-in;
+    color: #fff;
+}
+
+.mensaje button:hover {
+    background-color: #ABEBC6;
+}
+
+.mensaje a{
+    padding: 1rem;
+    text-decoration: none;
+    text-align: center;
+    color:#fff
+}
+
+.creacion {
+    max-width: 400px;
+    padding: 1rem;
+    margin: 2rem;
+    background-color: rgba(75, 134, 102, 0.5);
+    text-align: center;
+}
+
+.gratis{
+    text-align: center;
+}
+
+.crear-cuenta {
+    padding: 2.7rem 0;
+    font-size: 1.7rem;
+
+}
+
+.icono {
+    max-width: 200px;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+
+}
+
+.border-icon{
+    height: 20px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    border: solid thin white;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    transition: all .3s ease-in;
+}
+
+.border-icon:hover{
+background-color: #82E0AA;
+cursor: pointer;
+}
+
+.gratis{
+    padding: 2rem;
+}
+
+.creacion input{
+    width: 70%;
+    display: block;
+    margin: auto;
+    margin-bottom: 2rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: white thin solid;
+    text-align: center;
+    outline: center;
+    padding: .2rem 0;
+    font-size: 1rem;
+    color: white;
+}
+.creacion input[type="button"]{
+    width: 60%;
+    margin: auto;
+    border: solid thin white;
+    padding: .7rem;
+    border-radius: 2rem;
+    background-color: white;
+    font-weight: 600;
+    margin-top: 3rem;
+    font-size: .9rem;
+    cursor: pointer;
+    color:black;
+}
+.iniciar-sesion {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.iniciar-sesion.active{
+    opacity: 1;
+    visibility: visible;
+
+}
+
+.crear-cuenta.active{
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+
